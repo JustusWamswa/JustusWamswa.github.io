@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', serif;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../IMAGES/ross-stone-s1T9RGy9lE8-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+.navbar{
+    padding: 0 5em; 
+} 
+.logo {
+    background-image: linear-gradient(to right, #E23219, #FFB800);
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.navbar-nav a {
+	font-size: 15px;
+	font-weight: 700;
+	text-shadow: white;
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: orange;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+    color: orange;
+    background-image: linear-gradient(to right, #E23219, #FFB800);
+}
+.navbar .dropdown-menu .dropdown-item{
+    color: black
+}
+.navbar .dropdown-menu .dropdown-item:hover{
+    color: red;
+}
+
+
+.testimonial {
+    text-align: left;
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(225,225,225,0.1);
+    padding: 2rem;
+}
+.testimonial h3{
+    color: wheat;
+}
+.testimonial p{
+    font-weight: 300;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.card-number{
+    color: rgba(225,225,225,0.08);
+    font-size: 5rem;
+}
+.card-title{
+    color: orange;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(58.51deg, rgba(255, 255, 255, 0.05) 1.36%, rgba(255, 255, 255, 0.122) 96.3%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.65);
+    border-radius: 1rem;
+    width: 60%;
+    margin: 3rem auto;
+    padding: 3rem 0rem;
+}
+
+input {
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    width: 70%;
+    height: 3rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    font-size: large;
+
+}
+div.comment-jumbotron{
+    padding: 5em 0;
+}
+.btn{
+    width: 30%;
+    border-radius: 20px;
+}
+div.comment-jumbotron h3{
+    color: red;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.Note{
+    color: red;
+    font-style: italic;
+}
+.Notes{
+    color: wheat;
+}
+.place{
+    color: pink;
+    font-style: italic;
+    font-size: 20px;
+}
+.testimonial-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+}
+
+.grid-col-2{
+    grid-column: span 2;
+}
+.grid-row-2{
+    grid-row: span 2;
+}
+.hello{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 2rem;
+}
+.mauritius{
+    background-image: url(../IMAGES/justus/dan-dy-WwUnM9iLWwM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20rem;
+    height: 15rem;
+    margin: 0rem 2rem 1rem 0rem;
+    float: left;
+}
+.section3 {
+    background-color: black;
+    padding-top: 5rem;
+}
+#disqus_thread{
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgb(196, 196, 196);
+    padding: 2rem;
+}
+.footer-jumbotron{
+    text-align: center;
+    
+}
+.footer-jumbotron h3{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+.footer-jumbotron p{
+    color: red;
+    font-weight: 400;
+    font-size: 15px;
+}
+.careers{
+    width: 20rem; 
+    height: 15rem; 
+    padding: 1rem; 
+    margin: 0rem auto 1rem auto; 
+    background-image: url(../IMAGES/justus/peter-fogden-z7oytXGI6VI-unsplash.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+
+}
+ 
+@media screen and (max-width: 680px) {
+    .testimonial-grid{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(1, 100%);
+        padding: 1rem;
+    }
+    .grid-col-2{
+        grid-column: span 1;
+    }
+    .grid-row-2{
+        grid-row: span 1;
+    }
+    .mauritius{
+        width: 100%;
+        margin: 0rem auto 1rem auto;
+    }
+    .careers{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 680px) {
+    .testimonial-grid{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+    .grid-col-2{
+        grid-column: span 1;
+    }
+    .grid-row-2{
+        grid-row: span 1;
+    }
+    .mauritius{
+        width: 100%;
+        margin: 0rem auto 1rem auto;
+    }
+    .careers{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 940px) {
+    .testimonial-grid{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+    }
+    .grid-col-2{
+        grid-column: span 2;
+    }
+    .grid-row-2{
+        grid-row: span 2;
+    }
+    .mauritius{
+        width: 20rem;
+        margin: 0rem auto 1rem auto;
+    }
+    .careers{
+        width: 20rem;
+    }
+}
